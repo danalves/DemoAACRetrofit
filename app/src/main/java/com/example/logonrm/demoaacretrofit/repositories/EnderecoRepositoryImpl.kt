@@ -36,7 +36,7 @@ class EnderecoRepositoryImpl: EnderecoRepository {
         enderecoAPI.pesquisar(cep)
                 .enqueue(object : Callback<Endereco> {
                     override fun onResponse(call: Call<Endereco>?, response: Response<Endereco>?) {
-                        liveData.value = EnderecoResponse(response?.body()!!)
+                        liveData.value = EnderecoResponse(response?.body())
                     }
 
                     override fun onFailure(call: Call<Endereco>?, t: Throwable?) {

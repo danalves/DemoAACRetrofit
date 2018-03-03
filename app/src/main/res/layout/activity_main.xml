@@ -1,32 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="8dp"
-    tools:context="com.example.logonrm.demoaacretrofit.ui.mainscreen.MainActivity">
+    android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/etCEP"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Digite o CEP"
-        android:inputType="number"
-        android:maxLength="8"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        tools:context="com.example.logonrm.demoaacretrofit.ui.mainscreen.MainActivity">
 
-    <Button
-        android:id="@+id/btPesquisar"
+        <EditText
+            android:id="@+id/etCEP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o CEP"
+            android:inputType="number"
+            android:maxLength="8" />
+
+        <Button
+            android:id="@+id/btPesquisar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesquisar" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLoading"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Pesquisar"/>
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#FFF"
+        android:visibility="gone">
 
-    <TextView
-        android:id="@+id/tvResultado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CARREGANDO OS DADOS ..."/>
 
-</LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
