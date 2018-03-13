@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DemoAACRetrofit.iml" filepath="$PROJECT_DIR$/DemoAACRetrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DemoAACRetrofit.iml" filepath="$PROJECT_DIR$/.idea/DemoAACRetrofit.iml" />
+      <module fileurl="file://C:\Users\danil\AndroidStudioProjects\DemoAACRetrofit\DemoAACRetrofit.iml" filepath="C:\Users\danil\AndroidStudioProjects\DemoAACRetrofit\DemoAACRetrofit.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

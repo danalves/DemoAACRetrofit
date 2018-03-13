@@ -39,4 +39,7 @@ dependencies {
     annotationProcessor "android.arch.lifecycle:compiler:1.1.0"
 
     implementation 'com.muddzdev:styleabletoast:2.0.2'
+
+    implementation 'com.google.android.gms:play-services-maps:11.8.0'
+    implementation 'com.google.android.gms:play-services-location:11.8.0'
 }
